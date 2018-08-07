@@ -5,14 +5,21 @@
   "dependencies": {
     "bootstrap": "3",
     "font-awesome": "^4.7.0",
+    "npm": "^6.3.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "standard": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "standard && node my-tests.js",
     "eject": "react-scripts eject"
+  },
+  "standard": {
+    "ignore": [
+      "/src/registerServiceWorker.js"
+    ]
   }
 }
