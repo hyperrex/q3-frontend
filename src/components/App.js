@@ -1,19 +1,31 @@
-import React, { Component } from 'react'
-import Header from './Header'
+import React, { Component } from 'react';
+import Header from './Header';
 import Profile from './Profile'
-import Footer from './Footer'
-import '../css/App.css'
+import Footer from './Footer';
+import '../css/App.css';
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Header />
         <Profile />
         <Footer />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
+
+/*
+create a login form that takes birthdate and ssdigits
+-> enter that into puppeteer
+
+
+
+
+
+
+
+*/
