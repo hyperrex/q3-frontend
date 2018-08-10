@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Profile from './Profile'
+import SignUpForm from './SignUpForm'
 import Footer from './Footer';
 import '../css/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Header />
-        <Profile />
+        <SignUpForm />
         <Footer />
       </div>
     );
@@ -17,15 +17,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*
-create a login form that takes birthdate and ssdigits
--> enter that into puppeteer
-
-
-
-
-
-
-
-*/

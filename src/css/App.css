@@ -1,8 +1,15 @@
-.header{
+.container{
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
   background-color: yellow;
 }
 
-.profile{
+.header{
+  background-color: pink;
+}
+
+.SignUpForm{
   background-color: orange;
 }
 
