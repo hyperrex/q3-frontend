@@ -103,6 +103,8 @@ typings/
 .env.development.local
 .env.test.local
 .env.production.local
+package-lock.json
+src/services/boiler.jsx
 
 npm-debug.log*
 yarn-debug.log*

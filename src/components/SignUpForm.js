@@ -14,8 +14,19 @@ class SignUpForm extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault()
-    let response = await fetch('http://localhost:3001/users', {
+    let response = await fetch('http://localhost:8080/status/', {
       method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({"name": this.state.name})
+    })
+    let json = await response.json()
+    console.log("Response: ", json)
+  }
+
+  handleRequest = async (event) => {
+    event.preventDefault()
+    let response = await fetch('http://localhost:8080/', {
+      method: "GET",
       headers: { "Content-Type": "application/json; charset=utf-8" },
       body: JSON.stringify({"name": this.state.name})
     })
@@ -35,8 +46,6 @@ class SignUpForm extends React.Component {
     );
   }
 }
-
-
 
 export default SignUpForm
 
